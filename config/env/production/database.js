@@ -1,8 +1,6 @@
 const parse = require("pg-connection-string").parse;
 const config = parse(process.env.DATABASE_URL);
 module.exports = ({ env }) => ({
-  url: env("https://strapi-cms-api-app.herokuapp.com"),
-  proxy: true,
   connection: {
     client: "postgres",
     connection: {
