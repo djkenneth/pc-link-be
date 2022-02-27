@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "books",
+  "collectionName": "todos",
   "info": {
-    "singularName": "book",
-    "pluralName": "books",
-    "displayName": "Book",
-    "description": ""
+    "singularName": "todo",
+    "pluralName": "todos",
+    "displayName": "Todo"
   },
   "options": {
     "draftAndPublish": true
@@ -15,8 +14,8 @@
     "title": {
       "type": "string"
     },
-    "auther": {
-      "type": "string"
+    "detail": {
+      "type": "richtext"
     }
   }
 }
