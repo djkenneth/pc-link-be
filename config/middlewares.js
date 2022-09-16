@@ -1,6 +1,19 @@
 module.exports = [
   "strapi::errors",
-  "strapi::security",
+  {
+    name: "strapi::security",
+    config: {
+      contentSecurityPolicy: {
+        useDefaults: true,
+        directives: {
+          // Enable the download of the Monaco editor
+          // from cdn.jsdelivr.net.
+          "script-src": ["'self'", "blob:"],
+          upgradeInsecureRequests: null,
+        },
+      },
+    },
+  },
   "strapi::cors",
   "strapi::poweredBy",
   "strapi::logger",
