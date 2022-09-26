@@ -12,16 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "title": {
       "type": "string"
-    },
-    "description": {
-      "type": "text"
     },
     "price": {
       "type": "decimal"
     },
-    "discountedPrice": {
+    "compareAtPrice": {
       "type": "decimal",
       "default": 0
     },
@@ -43,11 +40,25 @@
       "type": "integer"
     },
     "slug": {
-      "type": "uid",
-      "targetField": "name"
+      "type": "uid"
     },
-    "category": {
-      "type": "json"
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "products"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "products"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "quantity": {
+      "type": "integer"
     }
   }
 }
