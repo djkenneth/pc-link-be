@@ -4,7 +4,7 @@
   "info": {
     "singularName": "product",
     "pluralName": "products",
-    "displayName": "product",
+    "displayName": "Product",
     "description": ""
   },
   "options": {
@@ -12,18 +12,19 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "name": {
       "type": "string"
     },
     "price": {
-      "type": "decimal"
-    },
-    "compareAtPrice": {
       "type": "decimal",
       "default": 0
     },
-    "brand": {
-      "type": "string"
+    "compare_at_price": {
+      "type": "decimal"
+    },
+    "rating": {
+      "type": "integer",
+      "default": 0
     },
     "image": {
       "type": "media",
@@ -31,34 +32,30 @@
       "required": false,
       "allowedTypes": [
         "images",
-        "files",
-        "videos",
-        "audios"
+        "videos"
       ]
     },
-    "reviews": {
-      "type": "integer"
+    "details": {
+      "type": "richtext"
     },
-    "slug": {
-      "type": "uid"
-    },
-    "categories": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::category.category",
-      "inversedBy": "products"
-    },
-    "tags": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::tag.tag",
-      "inversedBy": "products"
-    },
-    "description": {
+    "information": {
       "type": "richtext"
     },
     "quantity": {
-      "type": "integer"
+      "type": "integer",
+      "default": 0
+    },
+    "color": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::color.color",
+      "inversedBy": "products"
+    },
+    "brand": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::brand.brand",
+      "inversedBy": "products"
     }
   }
 }

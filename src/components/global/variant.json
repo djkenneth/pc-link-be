@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_global_variants",
+  "info": {
+    "displayName": "Variant",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "options": {
+      "type": "enumeration",
+      "enum": [
+        "color",
+        "size"
+      ]
+    },
+    "value": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    }
+  }
+}

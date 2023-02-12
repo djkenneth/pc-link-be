@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- *  todo controller
+ *  brand controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::todo.todo');
+module.exports = createCoreController('api::brand.brand');
