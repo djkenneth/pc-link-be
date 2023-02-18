@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sub_child_categories",
+  "info": {
+    "singularName": "sub-child-category",
+    "pluralName": "sub-child-categories",
+    "displayName": "Sub Child Category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "value": {
+      "type": "string",
+      "unique": true
+    }
+  }
+}
