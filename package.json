@@ -2,7 +2,7 @@
   "name": "pc-link-backend",
   "private": true,
   "version": "0.1.0",
-  "description": "A PC Link is a Tech Store application",
+  "description": "A PC Link is a Tech Store application.",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
