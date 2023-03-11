@@ -21,7 +21,7 @@ module.exports = ({ env }) => ({
     config: {
       endpoint: '/graphql',
       shadowCRUD: true,
-      playgroundAlways: false,
+      playgroundAlways: true,
       depthLimit: 10,
       amountLimit: 100,
       apolloServer: {
