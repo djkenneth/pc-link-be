@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "value": {
+    "name": {
       "type": "string",
       "unique": true
     },
@@ -32,7 +32,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::category.category",
-      "inversedBy": "sub_child_category"
+      "mappedBy": "sub_child_category"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }

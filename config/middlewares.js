@@ -8,7 +8,7 @@ module.exports = [
         directives: {
           // Enable the download of the Monaco editor
           // from cdn.jsdelivr.net.
-          "script-src": ["'self'", "blob:", "https:"],
+          "script-src": ["'self'", "cdn.jsdelivr.net", "blob:", "https:"],
           "img-src": [
             "'self'",
             "data:",

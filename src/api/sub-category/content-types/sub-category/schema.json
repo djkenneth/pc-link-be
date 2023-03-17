@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "value": {
+    "name": {
       "type": "string"
     },
     "products": {
@@ -25,13 +25,17 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::category.category",
-      "inversedBy": "sub_categories"
+      "mappedBy": "sub_categories"
     },
     "sub_child_categories": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::sub-child-category.sub-child-category",
       "mappedBy": "sub_categories"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }
