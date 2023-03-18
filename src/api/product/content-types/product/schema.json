@@ -79,6 +79,10 @@
       "relation": "manyToOne",
       "target": "api::sub-child-category.sub-child-category",
       "inversedBy": "products"
+    },
+    "isNew": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
