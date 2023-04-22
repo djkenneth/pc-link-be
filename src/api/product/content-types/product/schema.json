@@ -35,12 +35,6 @@
         "videos"
       ]
     },
-    "details": {
-      "type": "richtext"
-    },
-    "information": {
-      "type": "richtext"
-    },
     "quantity": {
       "type": "integer",
       "default": 0
@@ -83,6 +77,20 @@
     "isNew": {
       "type": "boolean",
       "default": false
+    },
+    "details": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "information": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }
