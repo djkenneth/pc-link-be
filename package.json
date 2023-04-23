@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "description": "A PC Link is a Tech Store application.",
   "scripts": {
-    "develop": "strapi develop",
+    "dev": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi"
